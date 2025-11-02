@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+please click on below link to confirm your registration.
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape%}
+
+
+<!-- http://127.0.0.1:1234/activate/MTM/hfdasjkfhkdfugfkjdgfkjs/ -->
