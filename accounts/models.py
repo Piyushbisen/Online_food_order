@@ -38,10 +38,10 @@ class usermanager(BaseUserManager): #baseusermanager is inbuilt class in django 
     
 
 class User(AbstractBaseUser):
-    RESTAURENT = 1
+    VENDOR = 1
     CUSTOMER = 2
     ROLE_CHOICE = (
-        (RESTAURENT, 'Restaurent'),
+        (VENDOR, 'vendor'),
         (CUSTOMER, 'Customer'),
     )
     first_name = models.CharField(max_length=50)
